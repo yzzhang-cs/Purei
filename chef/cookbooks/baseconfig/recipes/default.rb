@@ -3,7 +3,7 @@
 
 ###################### Parameters ##############################
 # Turn this to true if you already have your app in the directory
-APP_EXIST = False
+APP_EXIST = false
 ################################################################
 
 
