@@ -1,28 +1,21 @@
-# Express.js Vagrant Template
-This is the template repo for an [express.js](https://expressjs.com/) app, and uses [Vagrant](https://www.vagrantup.com/) for VM deployment testing, and [Chef-Solo](https://docs.chef.io/chef_solo/) for provision.  
-This template is adapted from the template given in SFU CMPT470 course, by [Greg Baker](https://www2.cs.sfu.ca/~ggbaker/).
+# Purei
+Is a web player for youtube video. The owner of this project usually use this player to play music/playlists on Youtube.  
 
-## Prerequirements:
-* [Vagrant installed](https://www.vagrantup.com/downloads)
+The name Purei came from the Japanese pronunciation of "play".
 
-## Usage:
-### Starting a new app:
-1. `vagrant up`
-2. `vagrant ssh`
-3. `cd project & express --view=pug app`  
+## Usage
 
-After that, when you add any dependencies, add them in the recipe(default.rb) too.
+### Visiting the webapp using your browser(currently unavailable)
+I have not deployed the app yet. After I increase the quality of the webapp, I may consider deploy it somewhere with a URL. Stay tuned for more information.
 
-### Development:
-1. `vagrant up` to boot up the VM.
-2. `vagrant ssh` to connect to the VM.
-3. `cd project/app`
-4. `DEBUG=app:* npm start`. You may have to `sudo service expressjs_app stop` before this too.
-5. View your app at [http://localhost:3000](http://localhost:3000).
+### Deploying this yourself
+#### With node.js or npm
+I assume you choose this option because you know how [node.js](https://nodejs.org/en/) or [npm](https://www.npmjs.com/) works.
+1. `cd app`
+2. `npm start` or `node bin/www`
+3. Go to your webapp in your browser, usually [localhost:3000](http://localhost:3000)
 
-### Deployment:
-1. `vagrant up`
-2. View your app at [http://localhost:8080](http://localhost:8080).
-
-### Destroying:
-* `vagrant destroy`
+#### With Vagrant using VM
+1. [Install vagrant](https://www.vagrantup.com/downloads)
+2. `vagrant up`
+3. Go to [localhost:8080](http://localhost:8080) in your browser.
