@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:latest
+    volumes:
+      - ./db:/var/lib/postgres/data
+    environment: 
+      POSTGRES_PASSWORD: password
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    volumes:
+      - ./app:/app
+    ports:
+      - "3000:3000"
+    depends_on: 
+      - db
