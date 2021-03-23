@@ -1,8 +1,5 @@
 var player;
-console.log(v);
-console.log(list);
-console.log(index);
-console.log(t);
+
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('player', {
 		height: '360',
