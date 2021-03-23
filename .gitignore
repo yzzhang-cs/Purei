@@ -9,3 +9,5 @@ log/*
 .bundle
 
 app/node_modules
+
+/db
