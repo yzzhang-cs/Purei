@@ -1,6 +1,5 @@
 exports.watch = function(req, res) {
     var query = req.query;
-    console.log(req.query);
     res.render('../views/player/index.ejs', {query: query});
 };
 
