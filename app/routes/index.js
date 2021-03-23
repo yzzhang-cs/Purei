@@ -8,4 +8,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { hostUrl: hostUrl });
 });
 
+// if the user replace the Youtube url, use the playerController to handle the arguments
+router.get('/watch', playRouter.handle_replaced_url);
+
 module.exports = router;
