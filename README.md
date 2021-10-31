@@ -23,4 +23,4 @@ I assume you choose this option because you know how [node.js](https://nodejs.or
 
 #### With docker-compose
 1. `docker-compose up`
-2. Go to [localhost:8080](http://localhost:8080) in your browser.
+2. Go to [localhost:3000](http://localhost:8080) in your browser.
