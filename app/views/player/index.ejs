@@ -7,7 +7,10 @@
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
         var v = "<%= query.v %>";
-        var list = "<%= query.list %>";
+        var list;
+        <% if(query.list.trim() != "") { %>
+            list = "<%= query.list %>";
+        <% } %>
         //var index = "<%= query.index %>";
         //var t = "<%= query.t %>";
     </script>
